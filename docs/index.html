@@ -3,34 +3,35 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>PPG &mdash; Legal</title>
+  <title>PPG</title>
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
     body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; background: #fafafa; color: #333; display: flex; justify-content: center; align-items: center; min-height: 100vh; }
-    .container { text-align: center; padding: 2rem; }
-    h1 { font-size: 2rem; margin-bottom: .5rem; }
-    .subtitle { color: #666; margin-bottom: 2rem; font-size: 1.1rem; }
-    .cards { display: flex; gap: 1.5rem; justify-content: center; flex-wrap: wrap; }
-    .card { background: #fff; border: 1px solid #ddd; border-radius: 8px; padding: 2rem 2.5rem; text-decoration: none; color: #333; transition: box-shadow .2s, transform .2s; }
-    .card:hover { box-shadow: 0 4px 16px rgba(0,0,0,.08); transform: translateY(-2px); }
-    .card h2 { font-size: 1.25rem; margin-bottom: .5rem; }
-    .card p { color: #666; font-size: .9rem; }
+    .container { text-align: center; padding: 2rem; max-width: 520px; }
+    h1 { font-size: 2rem; margin-bottom: 1.5rem; }
+    .msg { font-size: 1.1rem; line-height: 1.7; color: #555; margin-bottom: .75rem; }
+    .msg strong { color: #333; }
+    .legal { margin-top: 3rem; font-size: .75rem; color: #aaa; }
+    .legal a { color: #aaa; text-decoration: none; }
+    .legal a:hover { text-decoration: underline; }
   </style>
 </head>
 <body>
   <div class="container">
     <h1>PPG</h1>
-    <p class="subtitle">Legal documents</p>
-    <div class="cards">
-      <a class="card" href="privacy.html">
-        <h2>Privacy Policy / Informativa sulla Privacy</h2>
-        <p>How your data is handled &mdash; Come vengono gestiti i tuoi dati</p>
-      </a>
-      <a class="card" href="terms.html">
-        <h2>Terms of Service / Termini di Servizio</h2>
-        <p>Rules for using this service &mdash; Regole per l'uso del servizio</p>
-      </a>
-    </div>
+    <p class="msg">
+      This is a <strong>personal project</strong>. You should have never landed on this page.
+      If you're here, something probably went wrong.
+    </p>
+    <p class="msg" lang="it">
+      Questo &egrave; un <strong>progetto personale</strong>. Non saresti mai dovuto arrivare su questa pagina.
+      Se sei qui, probabilmente c'&egrave; qualcosa che non va.
+    </p>
+    <p class="legal">
+      <a href="privacy.html">Privacy Policy</a> &middot;
+      <a href="terms.html">Terms of Service</a>
+    </p>
+    <p class="legal">&copy; <script>document.write(new Date().getFullYear())</script></p>
   </div>
 </body>
 </html>
